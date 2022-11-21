@@ -50,7 +50,26 @@ class Triangle {
     }
 }
 
+class Cercle {
+    constructor(rayon){
+        this.rayon = rayon;
+    }
+
+    getPerimetre() {
+        return (2*this.rayon);
+    }
+
+    getSurface() {
+        return (Math.round(Math.PI*Math.pow(this.rayon,2)));
+    }
+
+    getAirSphere() {
+        return((4*Math.PI)*Math.pow(this.rayon,2));
+    }
+}
+
 module.exports = {
     Triangle:Triangle,
-    Cube:Cube
+    Cube:Cube,
+    Cercle:Cercle
 }
