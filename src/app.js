@@ -64,7 +64,7 @@ class Cercle {
     }
 
     getAirSphere() {
-        return((4*Math.PI)*Math.pow(this.rayon,2));
+        return(Math.round(4*Math.PI*Math.pow(this.rayon,2)));
     }
 }
 

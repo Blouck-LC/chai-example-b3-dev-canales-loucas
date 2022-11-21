@@ -8,15 +8,15 @@ describe('Testing the Cercle Functions', function() {
         done();
     });
 
-    it('2. test Surface du cercle', function() {
+    it('2. test Surface du cercle', function(done) {
         let ce2 = new Cercle(6);
         expect(ce2.getSurface()).to.equal(113);
         done();
     });
 
-    it('3. test Air de la sphere du cercle', function() {
+    it('3. test Air de la sphere du cercle', function(done) {
         let ce3 = new Cercle(3);
-        expect(ce3.getAirSphere()).to.equal(226);
+        expect(ce3.getAirSphere()).to.equal(113);
         done();
     });
 });
