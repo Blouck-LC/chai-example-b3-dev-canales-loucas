@@ -55,6 +55,10 @@ class Cercle {
         this.rayon = rayon;
     }
 
+    getDiametre(){
+        return (2*this.rayon)
+    }   
+
     getPerimetre() {
         return (2*this.rayon);
     }
